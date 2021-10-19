@@ -1,0 +1,88 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: rgb(16, 26, 61);
+    color: white;
+}
+
+.result {
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#result {
+    border: solid rgb(5, 19, 65);
+    border-width: 5px;
+    background-color: rgb(17, 16, 80);
+    height: 25vh;
+    width: 100%;
+    color: white;
+    outline: none;
+    resize: none;
+}
+
+.entry {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.entry h3 {
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 13%;
+}
+
+.entry input {
+    font-size: 20px;
+    font-weight: bold;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    outline: none;
+    width: 70%;
+    height: 25vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.entry button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    background: #3d348b;
+    box-shadow: 0 5px #2c0b8e;
+}
+
+button:hover {
+    box-shadow: 0 3px #2c0b8e;
+    top: 1px;
+}
+
+button:active {
+    box-shadow: 0 0 #2c0b8e;
+    top: 5px;
+}

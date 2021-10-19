@@ -10,15 +10,18 @@
 </head>
 
 <body>
-    <label for="text_entry">Enter text here:</label>
-    <br>
-    <br>
-    <input type="text" name="text_entry" id="text_entry" placeholder="Text...">
+    <div class="entry">
+        <h3>Enter text here :</h3>
+        <input type="text" name="text_entry" id="text_entry" placeholder="Text...">
+        <br>
+        <button onclick="lowerIt()">Lower Case It!</button>
+    </div>
     <br>
     <br>
     <div class="result">
-        <h3>Result</h3>
-        <p id="result"></p>
+        <h3 align="center">Result :</h3>
+        <textarea id="result" readonly>Waiting for text...</textarea>
+        <button onclick="copyResult()" style="display: block; margin-left: auto; margin-right: auto;">Copy result!</button>
     </div>
 
     <script src="index.js"></script>
