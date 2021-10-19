@@ -21,6 +21,7 @@ body {
     color: white;
     outline: none;
     resize: none;
+    font-size: 1.5em;
 }
 
 .entry {
