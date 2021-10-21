@@ -1,24 +1,19 @@
+const textEntry = document.getElementById("text_entry");
+const result = document.getElementById("result");
+
 function lowerIt() {
-    let text = document.getElementById("text_entry").value;
-    if (text.length < 1) {
-        alert("Please enter text to convert to lowercase");
-        return;
-    }
-    if (text.toLowerCase() === text) {
-        alert("Text is already lowercase");
-        return;
-    }
-    let result = text.toLowerCase();
-    document.getElementById("result").innerHTML = result;
+    const text = textEntry.value;
+    if (text.length < 1)
+        return alert("Please enter a text to convert to be converted to lowercase");
+    else if ((text = text.toLowerCase()) === text)
+        return alert("Text is already in lowercase");
+    result.innerHTML = text;
 }
 
 function copyResult() {
-    var copyText = document.getElementById("result");
-    copyText.select();
-    if (copyText.value === "Waiting for text...") {
-        alert("You need to lowercase some text first");
-        return;
-    }
+    result.select();
+    if (result.value === "Waiting for text...")
+        return alert("You forgot to add a text!");
     document.execCommand("copy");
     alert("Text copied!");
 }
