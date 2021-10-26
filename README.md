@@ -1,3 +1,5 @@
+https://lowercaseit.cf
+
 # About
 Just a website that turns any text into lowercase.
 
